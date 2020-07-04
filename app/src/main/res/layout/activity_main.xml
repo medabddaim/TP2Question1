@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20sp">
+
+    <ImageView
+        android:id="@+id/imgIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/ajouterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AJOUTER" />
+
+        <Button
+            android:id="@+id/modifierBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODIFIER" />
+
+        <Button
+            android:id="@+id/supprimerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUPPRIMER" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/prenonTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"/>
+
+    <EditText
+        android:id="@+id/adressTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <LinearLayout
+            android:layout_width="264sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/licenceCbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licence" />
+
+            <CheckBox
+                android:id="@+id/masterCbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master" />
+
+            <CheckBox
+                android:id="@+id/doctoratCbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctorat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/confirmerBtn"
+                android:layout_width="142sp"
+                android:layout_height="70sp"
+                android:text="confirmer" />
+            <TextView
+                android:id="@+id/resultatTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Résultat"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
